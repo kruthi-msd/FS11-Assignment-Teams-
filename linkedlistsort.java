@@ -37,9 +37,9 @@ class Employee {
 public class Main {
     public static void main(String[] args) {
         LinkedList<Employee> employees = new LinkedList<>();
-        employees.add(new Employee(101, "John", "Manager", 50000));
-        employees.add(new Employee(102, "Smith", "Developer", 60000));
-        employees.add(new Employee(103, "Bob", "Analyst", 55000));
+        employees.add(new Employee(1, "Sony", "Manager",50000));
+        employees.add(new Employee(2, "Smiley", "Developer",65000));
+        employees.add(new Employee(3, "Bhanu", "Analyst",70000));
         Collections.sort(employees, Comparator.comparing(Employee::getName));
         System.out.println("Sorted by Name:");
         for (Employee emp : employees) {
